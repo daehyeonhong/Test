@@ -3,12 +3,12 @@
 <html>
 	<head>
 		<meta charset="UTF-8" />
-		<title>Test</title>
+		<title>Random</title>
 	</head>
 	<body>
-		<h1>감자튀김</h1>
-		<button onclick="start()">랜덤</button>
-		<form action="result.jsp" method="post">
+		<button onclick="random()">랜덤번호 생성</button>
+		<form action="randomProcess.jsp" method="post">
+			<input id="seq" name="seq" type="text" placeholder="SEQ를 입력해주세요." />
 			<input id="random1" name="random1" type="text" />
 			<input id="random2" name="random2" type="text" />
 			<input id="random3" name="random3" type="text" />
@@ -17,10 +17,10 @@
 			<input id="random6" name="random6" type="text" />
 			<input id="random7" name="random7" type="text" />
 			<input id="random8" name="random8" type="text" />
-			<input type="submit" value="감자튀김" />
+			<input type="submit" value="전송" />
 		</form>
 		<script type="text/javascript">
-			const start = function () {
+			const random = function () {
 				const rand1 = Math.round(Math.random() * 1000);
 				const rand2 = Math.round(Math.random() * 1000);
 				const rand3 = Math.round(Math.random() * 1000);
